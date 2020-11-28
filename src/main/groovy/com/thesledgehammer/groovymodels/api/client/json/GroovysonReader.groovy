@@ -16,7 +16,7 @@
 
 package com.thesledgehammer.groovymodels.api.client.json
 
-import com.thesledgehammer.groovymc.utils.StringTools
+import com.thesledgehammer.groovymodels.utils.StringTools
 import groovy.json.JsonSlurper
 import net.minecraft.util.ResourceLocation
 

@@ -7,12 +7,12 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.model.MutableQuad
-import com.thesledgehammer.groovymc.utils.ListTools
-import com.thesledgehammer.groovymc.utils.StringTools
-import com.thesledgehammer.groovymc.utils.variables.VariableBoolean
-import com.thesledgehammer.groovymc.utils.variables.VariableDouble
-import com.thesledgehammer.groovymc.utils.variables.VariableObject
+import com.thesledgehammer.groovymodels.client.model.MutableQuad
+import com.thesledgehammer.groovymodels.utils.ListTools
+import com.thesledgehammer.groovymodels.utils.StringTools
+import com.thesledgehammer.groovymodels.utils.variables.VariableBoolean
+import com.thesledgehammer.groovymodels.utils.variables.VariableDouble
+import com.thesledgehammer.groovymodels.utils.variables.VariableObject
 import net.minecraft.util.Direction
 import net.minecraft.util.math.MathHelper
 

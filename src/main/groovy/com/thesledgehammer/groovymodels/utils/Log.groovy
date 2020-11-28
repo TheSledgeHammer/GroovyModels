@@ -16,41 +16,41 @@
 
 package com.thesledgehammer.groovymodels.utils
 
-import com.thesledgehammer.groovymc.GroovyMC
+import com.thesledgehammer.groovymodels.GroovyModels
 import net.minecraft.item.ItemStack
 import org.apache.logging.log4j.Level
 
 class Log {
 
     static void log(Level logLevel, String message) {
-        GroovyMC.LOGGER.log(logLevel, message);
+        GroovyModels.LOGGER.log(logLevel, message);
     }
 
     static void log(Level logLevel, String message, Object e) {
-        GroovyMC.LOGGER.log(logLevel, message, e);
+        GroovyModels.LOGGER.log(logLevel, message, e);
     }
 
     static void logInfo(String message){
-        GroovyMC.LOGGER.info(message);
+        GroovyModels.LOGGER.info(message);
     }
 
     static void logWarn(String message) {
-        GroovyMC.LOGGER.warn(message);
+        GroovyModels.LOGGER.warn(message);
     }
 
     static void logFatal(String message) {
-        GroovyMC.LOGGER.fatal(message);
+        GroovyModels.LOGGER.fatal(message);
     }
 
     static void logDebug(String message) {
-        GroovyMC.LOGGER.debug(message);
+        GroovyModels.LOGGER.debug(message);
     }
 
     static void logError(String string) {
-        GroovyMC.LOGGER.error(string);
+        GroovyModels.LOGGER.error(string);
     }
 
     static void logError(String string, ItemStack stack) {
-        GroovyMC.LOGGER.error(string, stack);
+        GroovyModels.LOGGER.error(string, stack);
     }
 }

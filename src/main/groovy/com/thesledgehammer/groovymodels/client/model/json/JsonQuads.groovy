@@ -7,9 +7,9 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.model.ModelUtil
-import com.thesledgehammer.groovymc.client.model.MutableQuad
-import com.thesledgehammer.groovymc.utils.ListTools
+import com.thesledgehammer.groovymodels.client.model.ModelUtil
+import com.thesledgehammer.groovymodels.client.model.MutableQuad
+import com.thesledgehammer.groovymodels.utils.ListTools
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.util.Direction
 

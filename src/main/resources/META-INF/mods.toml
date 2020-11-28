@@ -1,34 +1,15 @@
 modLoader="groovyfml"
 loaderVersion="[3,)"
-issueTrackerURL="https://github.com/TheSledgeHammer/GroovyMC/issues"
+issueTrackerURL="https://github.com/TheSledgeHammer/GroovyModels/issues"
 [[mods]]
-    modId="groovymc"
+    modId="groovymodels"
     version="${version}"
-    displayName="GroovyMC"
+    displayName="GroovyModels"
     #updateJSONURL="http://myurl.me/" #optional
-    displayURL="https://github.com/TheSledgeHammer/GroovyMC"
+    displayURL="https://github.com/TheSledgeHammer/GroovyModels"
     #logoFile="groovymclogo.png"
     credits="Apache Groovy"
     authors="TheSledgeHammer"
     description='''
-    An Apache Groovy Compatibility Library
+    An Apache Groovy Model API for Minecraft
     '''
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.groovymc]]
-    modId="groovyforge"
-    mandatory=true
-    versionRange="[3,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.groovymc]]
-    modId="forge"
-    mandatory=true
-    versionRange="[34,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.groovymc]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.16.3)"
-    ordering="NONE"
-    side="BOTH"

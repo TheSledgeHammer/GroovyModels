@@ -8,10 +8,10 @@
 package com.thesledgehammer.groovymodels.client.model.json
 
 import com.google.common.collect.ImmutableList
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.model.MutableQuad
-import com.thesledgehammer.groovymc.utils.JsonTools
-import com.thesledgehammer.groovymc.utils.MathTools
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.model.MutableQuad
+import com.thesledgehammer.groovymodels.utils.JsonTools
+import com.thesledgehammer.groovymodels.utils.MathTools
 import net.minecraft.client.renderer.model.BakedQuad
 import net.minecraft.client.renderer.model.IBakedModel
 import net.minecraft.client.renderer.model.ModelBakery

@@ -16,8 +16,8 @@
 
 package com.thesledgehammer.groovymodels.client.definitions.render
 
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectModel
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectModel
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
 /* Convert to RenderType */
 class CutoutMippedKey {
 

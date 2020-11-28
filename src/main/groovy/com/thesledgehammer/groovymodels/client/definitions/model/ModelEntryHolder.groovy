@@ -16,7 +16,6 @@
 
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-
 import net.minecraft.util.ResourceLocation
 
 abstract class ModelEntryHolder extends ModelEntryBakery<ModelEntry, TextureEntry> {

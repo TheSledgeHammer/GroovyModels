@@ -7,7 +7,7 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.model.ModelUtil
+import com.thesledgehammer.groovymodels.client.model.ModelUtil
 
 interface ITextureGetter {
 

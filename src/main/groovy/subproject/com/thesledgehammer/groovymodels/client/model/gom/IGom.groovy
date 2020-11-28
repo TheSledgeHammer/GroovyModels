@@ -1,7 +1,7 @@
-package subproject.com.thesledgehammer.groovymc.client.model.gom
+package subproject.com.thesledgehammer.groovymodels.client.model.gom
 
 /* GOM (Groovy Object Model Interface) */
-interface IGOM {
+interface IGom {
 
     /* GOM format version */
     String getGOMVersion();

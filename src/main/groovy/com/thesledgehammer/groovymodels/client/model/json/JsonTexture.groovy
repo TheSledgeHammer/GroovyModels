@@ -7,9 +7,9 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.model.ModelUtil
-import com.thesledgehammer.groovymc.utils.GPrimitives
-import com.thesledgehammer.groovymc.utils.MathTools
+import com.thesledgehammer.groovymodels.client.model.ModelUtil
+import com.thesledgehammer.groovymodels.utils.GPrimitives
+import com.thesledgehammer.groovymodels.utils.MathTools
 import groovy.json.JsonException
 import net.minecraft.util.Direction
 

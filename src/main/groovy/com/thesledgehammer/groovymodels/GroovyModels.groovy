@@ -1,16 +1,15 @@
 package com.thesledgehammer.groovymodels
 
-
+import com.thesledgehammer.groovymodels.config.Constants
 import net.minecraftforge.fml.ModContainer
 import net.minecraftforge.fml.ModLoadingContext
 import net.minecraftforge.fml.common.Mod
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 
-@Mod(GroovyModels.MOD_ID)
+@Mod(Constants.MOD_ID)
 class GroovyModels {
 
-	static final String MOD_ID = "groovymc";
 	static GroovyModels INSTANCE;
 	static ModContainer MOD_CONTAINER;
 
@@ -23,10 +22,16 @@ class GroovyModels {
 		//ModuleContainerManager.preInit();
 		//ModuleContainerManager.Init();
 		//ModuleContainerManager.postInit();
-		//Registry.init();
 	}
 
 
 	//GroovyLoader Example:
 	//private static final GroovyLoader groovyLoader = new GroovyLoader(Constants.MOD_PATH, Constants.RESOURCE_PATH, Constants.GROOVY_JVM, Constants.URL, Constants.MOD_ID);
 }
+
+/*
+Todo:
+  - Abstraction of gson to jsonsluper/jsonparser & vice-versa
+Key Minecraft Resource Components:
+  - ResourceLocation, ResourceLocationException, TranslationTextComponent, ICustomModelLoader, ISelectiveResourceReloadListener, IResourceManagerReloadListener, IResourceManager, IResource, IResourceType
+ */

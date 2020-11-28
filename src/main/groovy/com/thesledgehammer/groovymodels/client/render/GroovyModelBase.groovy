@@ -18,13 +18,13 @@ package com.thesledgehammer.groovymodels.client.render
 
 import com.mojang.blaze3d.matrix.MatrixStack
 import com.mojang.blaze3d.vertex.IVertexBuilder
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.model.GroovyStaticModel
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.model.GroovyStaticModel
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
 import net.minecraft.client.renderer.RenderType
 import net.minecraft.client.renderer.model.BakedQuad
-import net.minecraft.client.renderer.model.ModelRenderer
 import net.minecraft.client.renderer.model.Model
+import net.minecraft.client.renderer.model.ModelRenderer
 import net.minecraft.util.ResourceLocation
 
 import java.util.function.Function

@@ -16,12 +16,12 @@
 
 package com.thesledgehammer.groovymodels.client.definitions
 
-import com.thesledgehammer.groovymc.api.client.definitions.IRenderDefinition
-import com.thesledgehammer.groovymc.client.definitions.render.CutoutKey
-import com.thesledgehammer.groovymc.client.definitions.render.CutoutMippedKey
-import com.thesledgehammer.groovymc.client.definitions.render.SolidKey
-import com.thesledgehammer.groovymc.client.definitions.render.TranslucentKey
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectModel
+import com.thesledgehammer.groovymodels.api.client.definitions.IRenderDefinition
+import com.thesledgehammer.groovymodels.client.definitions.render.CutoutKey
+import com.thesledgehammer.groovymodels.client.definitions.render.CutoutMippedKey
+import com.thesledgehammer.groovymodels.client.definitions.render.SolidKey
+import com.thesledgehammer.groovymodels.client.definitions.render.TranslucentKey
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectModel
 
 class GroovyRenderDefinition implements IRenderDefinition {
 

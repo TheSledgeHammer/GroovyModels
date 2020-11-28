@@ -1,6 +1,6 @@
 package com.thesledgehammer.groovymodels.experimental
 
-import com.thesledgehammer.groovymc.utils.GPrimitives
+import com.thesledgehammer.groovymodels.utils.GPrimitives
 
 class GsonPrimitive {
 

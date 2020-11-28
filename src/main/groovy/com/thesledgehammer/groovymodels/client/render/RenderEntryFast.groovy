@@ -16,8 +16,8 @@
 
 package com.thesledgehammer.groovymodels.client.render
 
-import com.thesledgehammer.groovymc.api.modules.BlankRenderEventModule
-import com.thesledgehammer.groovymc.client.definitions.model.ModelEntryHolder
+import com.thesledgehammer.groovymodels.api.modules.BlankRenderEventModule
+import com.thesledgehammer.groovymodels.client.definitions.model.ModelEntryHolder
 import net.minecraft.tileentity.TileEntity
 
 abstract class RenderEntryFast<M extends ModelEntryHolder, T extends TileEntity> extends BlankRenderEventModule implements IRenderEntryFast<M, T> {

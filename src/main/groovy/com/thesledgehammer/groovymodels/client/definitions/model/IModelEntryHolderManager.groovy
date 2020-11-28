@@ -16,7 +16,6 @@
 
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-
 import net.minecraft.client.renderer.model.ModelResourceLocation
 import net.minecraft.item.Item
 

@@ -30,8 +30,8 @@ repositories {
 		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
 	}
 	maven {
-		name = "JAXB"
-		url = "https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api"
+		name = "Apache Groovy Yaml"
+		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-yaml"
 	}
 	maven {
 		name = "TheSledgeHammer"
@@ -88,6 +88,7 @@ minecraft {
 dependencies {
 	minecraft "net.minecraftforge:forge:${mcversion}-${forgeversion}"
 	compile "org.codehaus.groovy:groovy-all:${groovy_version}"
+	compile "org.codehaus.groovy:groovy-yaml:${groovy_version}"
 	compile "com.thesledgehammer.GroovyForge:GroovyForge_${mcversion}:${groovyforge_version}:universal"
 }
 

@@ -16,9 +16,9 @@
 
 package com.thesledgehammer.groovymodels.utils
 
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
-import com.thesledgehammer.groovymc.client.model.json.JsonQuads
-import com.thesledgehammer.groovymc.utils.variables.VariableDouble
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.client.model.json.JsonQuads
+import com.thesledgehammer.groovymodels.utils.variables.VariableDouble
 import net.minecraft.util.Direction
 
 class JsonTools {

@@ -6,8 +6,8 @@
  */
 package com.thesledgehammer.groovymodels.client.model
 
-import com.thesledgehammer.groovymc.utils.VecDouble
-import com.thesledgehammer.groovymc.utils.VecLong
+import com.thesledgehammer.groovymodels.utils.VecDouble
+import com.thesledgehammer.groovymodels.utils.VecLong
 import net.minecraft.client.renderer.BufferBuilder
 import net.minecraft.client.renderer.model.BakedQuad
 import net.minecraft.client.renderer.texture.TextureAtlasSprite

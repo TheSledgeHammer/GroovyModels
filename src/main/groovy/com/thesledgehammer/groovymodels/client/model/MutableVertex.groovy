@@ -7,7 +7,7 @@
 
 package com.thesledgehammer.groovymodels.client.model
 
-import com.thesledgehammer.groovymc.api.client.ISprite
+import com.thesledgehammer.groovymodels.api.client.ISprite
 import net.minecraft.client.renderer.BufferBuilder
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats

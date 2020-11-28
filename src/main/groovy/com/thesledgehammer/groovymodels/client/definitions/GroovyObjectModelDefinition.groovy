@@ -15,14 +15,14 @@
  */
 package com.thesledgehammer.groovymodels.client.definitions
 
-import com.thesledgehammer.groovymc.api.client.definitions.IGroovyObjectModelDefinition
-import com.thesledgehammer.groovymc.client.definitions.json.GroovysonStaticKey
-import com.thesledgehammer.groovymc.client.definitions.json.GroovysonVariableKey
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
-import com.thesledgehammer.groovymc.utils.variables.VariableBoolean
-import com.thesledgehammer.groovymc.utils.variables.VariableDouble
-import com.thesledgehammer.groovymc.utils.variables.VariableLong
-import com.thesledgehammer.groovymc.utils.variables.VariableObject
+import com.thesledgehammer.groovymodels.api.client.definitions.IGroovyObjectModelDefinition
+import com.thesledgehammer.groovymodels.client.definitions.json.GroovysonStaticKey
+import com.thesledgehammer.groovymodels.client.definitions.json.GroovysonVariableKey
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.utils.variables.VariableBoolean
+import com.thesledgehammer.groovymodels.utils.variables.VariableDouble
+import com.thesledgehammer.groovymodels.utils.variables.VariableLong
+import com.thesledgehammer.groovymodels.utils.variables.VariableObject
 import net.minecraft.util.Direction
 
 class GroovyObjectModelDefinition implements IGroovyObjectModelDefinition {

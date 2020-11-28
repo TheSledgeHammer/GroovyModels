@@ -17,7 +17,7 @@
 package com.thesledgehammer.groovymodels.client.model.bakedmodel
 
 import com.google.common.collect.ImmutableList
-import com.thesledgehammer.groovymc.client.model.MutableQuad
+import com.thesledgehammer.groovymodels.client.model.MutableQuad
 import net.minecraft.block.BlockState
 import net.minecraft.client.renderer.model.BakedQuad
 import net.minecraft.client.renderer.model.IBakedModel

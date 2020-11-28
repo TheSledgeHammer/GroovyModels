@@ -7,8 +7,8 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.model.ModelUtil
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.model.ModelUtil
 import net.minecraft.util.Direction
 
 class GroovysonVariableFaceUV {

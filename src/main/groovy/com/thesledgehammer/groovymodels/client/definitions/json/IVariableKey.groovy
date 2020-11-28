@@ -15,8 +15,8 @@
  */
 package com.thesledgehammer.groovymodels.client.definitions.json
 
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
-import com.thesledgehammer.groovymc.utils.variables.*
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.utils.variables.*
 import net.minecraft.util.Direction
 
 interface IVariableKey {

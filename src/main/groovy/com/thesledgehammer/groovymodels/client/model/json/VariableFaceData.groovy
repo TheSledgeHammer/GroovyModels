@@ -7,7 +7,7 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.model.ModelUtil
+import com.thesledgehammer.groovymodels.client.model.ModelUtil
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 
 class VariableFaceData {

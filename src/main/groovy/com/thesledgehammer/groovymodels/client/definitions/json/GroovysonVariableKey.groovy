@@ -17,10 +17,10 @@ package com.thesledgehammer.groovymodels.client.definitions.json
 
 import com.google.common.collect.HashBasedTable
 import com.google.common.collect.Table
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
-import com.thesledgehammer.groovymc.utils.ListTools
-import com.thesledgehammer.groovymc.utils.StringTools
-import com.thesledgehammer.groovymc.utils.variables.*
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.utils.ListTools
+import com.thesledgehammer.groovymodels.utils.StringTools
+import com.thesledgehammer.groovymodels.utils.variables.*
 import net.minecraft.util.Direction
 
 class GroovysonVariableKey implements IVariableKey {

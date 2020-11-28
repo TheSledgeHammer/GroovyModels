@@ -15,9 +15,9 @@
  */
 package com.thesledgehammer.groovymodels.client.model
 
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.definitions.model.ModelEntryHolder
-import com.thesledgehammer.groovymc.client.model.json.JsonTexture
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.definitions.model.ModelEntryHolder
+import com.thesledgehammer.groovymodels.client.model.json.JsonTexture
 import net.minecraft.client.Minecraft
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.util.ResourceLocation

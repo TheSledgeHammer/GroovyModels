@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package subproject.com.thesledgehammer.groovymc.client.model.gom
+package subproject.com.thesledgehammer.groovymodels.client.model.gom
 
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import groovy.xml.MarkupBuilder
+import groovy.yaml.YamlBuilder
+import groovy.yaml.YamlSlurper
 
-class SuperGOM {
+class SuperGom {
 
     static String CURRENT_VERSION = "1.0.2";
     static String PATH = "src/main/groovy/subproject/resources/gom/"
@@ -28,6 +30,9 @@ class SuperGOM {
     static void writeSuperGOM(String path, String modelVersion, String type) {
         if(type == "xml") {
             writeToXML(path, modelVersion);
+        }
+        if(type == "yaml") {
+            writeToYaml(path, modelVersion);
         }
         if(type == "json") {
             writeToJson(path, modelVersion);
@@ -45,7 +50,10 @@ class SuperGOM {
         if(type == "xml") {
             def xml = new groovy.xml.XmlSlurper();
             superGom = xml.parse(new FileReader("${path}gom-${modelVersion}.xml"));
-
+        }
+        if(type == "yaml") {
+            def yaml = new YamlSlurper();
+            superGom = yaml.parse(new FileReader("${path}gom-${modelVersion}.yaml"));
         }
         if(type == "json") {
             def json = new JsonSlurper();
@@ -153,6 +161,105 @@ class SuperGOM {
         writer.close();
     }
 
+    private static void writeToYaml(String path, String modelVersion) {
+        def writer = new FileWriter("${path}gom-${modelVersion}.yaml");
+        def yaml = new YamlBuilder();
+        yaml.gom {
+            modelversion(modelVersion)
+            parent()
+            textures {
+
+            }
+            shade()
+            variables {
+
+            }
+            rules {
+                when()
+                type()
+                from()
+                to()
+                origin()
+                angle()
+                scale()
+            }
+            elements {
+                element {
+                    name()
+                    from()
+                    to()
+                    light()
+                    render()
+                    faces {
+                        up {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        down {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        north {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        east {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        west {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        south {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                    }
+                    rotation {
+                        origin()
+                        axis()
+                        angle()
+                        rescale()
+                    }
+                    shade()
+                    colour()
+                    visible()
+                    invert()
+                    bothsides()
+                }
+            }
+            display {
+                name()
+                translation()
+                rotation()
+                scale()
+            }
+            values()
+            ambientocculusion()
+        }
+        writer.write(yaml);
+        writer.close();
+    }
+
     private static void writeToJson(String path, String modelVersion) {
         def writer = new FileWriter("${path}gom-${modelVersion}.json");
         def json = new JsonBuilder(writer);
@@ -255,7 +362,7 @@ class SuperGOM {
         writer.close();
     }
 
-    static class Serializer implements GOMDeserializer<SuperGOM>, GOMSerializer<SuperGOM> {
+    static class Serializer implements GomDeserializer<SuperGom>, GomSerializer<SuperGom> {
 
         @Override
         def Deserialize(String path, String version, String type) {
@@ -266,6 +373,7 @@ class SuperGOM {
         void Serialize(String path, String version, String type) {
             /* Write SuperGOM xml & json */
             writeSuperGOM(PATH, CURRENT_VERSION, "xml");
+            writeSuperGOM(PATH, CURRENT_VERSION, "yaml");
             writeSuperGOM(PATH, CURRENT_VERSION, "json");
 
             /* Write GOM */

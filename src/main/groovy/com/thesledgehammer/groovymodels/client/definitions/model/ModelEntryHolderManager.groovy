@@ -16,8 +16,8 @@
 
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-import com.thesledgehammer.groovymc.api.IInitModel
-import com.thesledgehammer.groovymc.api.client.ISprite
+import com.thesledgehammer.groovymodels.api.IInitModel
+import com.thesledgehammer.groovymodels.api.client.ISprite
 import net.minecraft.client.Minecraft
 import net.minecraft.client.renderer.model.IBakedModel
 import net.minecraft.client.renderer.texture.AtlasTexture

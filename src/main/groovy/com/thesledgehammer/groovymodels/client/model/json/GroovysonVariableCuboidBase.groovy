@@ -7,11 +7,11 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.model.ModelUtil
-import com.thesledgehammer.groovymc.client.model.MutableQuad
-import com.thesledgehammer.groovymc.utils.JsonTools
-import com.thesledgehammer.groovymc.utils.MathTools
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.model.ModelUtil
+import com.thesledgehammer.groovymodels.client.model.MutableQuad
+import com.thesledgehammer.groovymodels.utils.JsonTools
+import com.thesledgehammer.groovymodels.utils.MathTools
 import net.minecraft.util.Direction
 
 import javax.vecmath.Vector3f

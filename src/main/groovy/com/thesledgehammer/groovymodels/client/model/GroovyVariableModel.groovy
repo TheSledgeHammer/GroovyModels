@@ -16,16 +16,16 @@
 
 package com.thesledgehammer.groovymodels.client.model
 
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.definitions.GroovyObjectModelDefinition
-import com.thesledgehammer.groovymc.client.definitions.GroovyRenderDefinition
-import com.thesledgehammer.groovymc.client.definitions.render.CutoutKey
-import com.thesledgehammer.groovymc.client.definitions.render.CutoutMippedKey
-import com.thesledgehammer.groovymc.client.definitions.render.SolidKey
-import com.thesledgehammer.groovymc.client.definitions.render.TranslucentKey
-import com.thesledgehammer.groovymc.client.model.json.*
-import com.thesledgehammer.groovymc.utils.ListTools
-import com.thesledgehammer.groovymc.utils.StringTools
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.definitions.GroovyObjectModelDefinition
+import com.thesledgehammer.groovymodels.client.definitions.GroovyRenderDefinition
+import com.thesledgehammer.groovymodels.client.definitions.render.CutoutKey
+import com.thesledgehammer.groovymodels.client.definitions.render.CutoutMippedKey
+import com.thesledgehammer.groovymodels.client.definitions.render.SolidKey
+import com.thesledgehammer.groovymodels.client.definitions.render.TranslucentKey
+import com.thesledgehammer.groovymodels.client.model.json.*
+import com.thesledgehammer.groovymodels.utils.ListTools
+import com.thesledgehammer.groovymodels.utils.StringTools
 import net.minecraft.util.ResourceLocation
 
 //Work In Progress: JsonRule

@@ -15,7 +15,6 @@
  */
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-
 import net.minecraft.client.renderer.model.IBakedModel
 import net.minecraft.client.renderer.model.ModelResourceLocation
 import net.minecraft.util.ResourceLocation

@@ -7,7 +7,7 @@
 
 package com.thesledgehammer.groovymodels.client.model.json
 
-import com.thesledgehammer.groovymc.client.model.MutableVertex
+import com.thesledgehammer.groovymodels.client.model.MutableVertex
 
 import javax.vecmath.Point2f
 import javax.vecmath.Point3f

@@ -16,8 +16,8 @@
 
 package com.thesledgehammer.groovymodels.client.render
 
-import com.thesledgehammer.groovymc.client.definitions.model.ModelEntryHolder
-import com.thesledgehammer.groovymc.client.model.MutableQuad
+import com.thesledgehammer.groovymodels.client.definitions.model.ModelEntryHolder
+import com.thesledgehammer.groovymodels.client.model.MutableQuad
 import net.minecraft.client.renderer.BufferBuilder
 import net.minecraft.tileentity.TileEntity
 import net.minecraftforge.api.distmarker.Dist

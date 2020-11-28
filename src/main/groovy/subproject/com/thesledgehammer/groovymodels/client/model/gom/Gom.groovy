@@ -1,13 +1,13 @@
-package subproject.com.thesledgehammer.groovymc.client.model.gom
+package subproject.com.thesledgehammer.groovymodels.client.model.gom
 
-abstract class GOM implements IGOM {
+abstract class Gom implements IGom {
 
     private def obj;
     private String name;
 
-    GOM(String mPath, String mVersion, String mType) {
-        this.obj = SuperGOM.readSuperGOM(mPath, mVersion, mType);
-        this.name = String.valueOf(SuperGOM.readSuperGOM(mPath, mVersion, mType));
+    Gom(String mPath, String mVersion, String mType) {
+        this.obj = SuperGom.readSuperGOM(mPath, mVersion, mType);
+        this.name = String.valueOf(SuperGom.readSuperGOM(mPath, mVersion, mType));
     }
 
     @Override

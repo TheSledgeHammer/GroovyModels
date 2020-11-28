@@ -16,7 +16,7 @@
 
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
 
 interface IModelProvider {
 

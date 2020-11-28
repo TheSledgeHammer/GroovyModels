@@ -16,17 +16,17 @@
 
 package com.thesledgehammer.groovymodels.client.model
 
-import com.thesledgehammer.groovymc.client.definitions.GroovyDefinitionContext
-import com.thesledgehammer.groovymc.client.definitions.GroovyObjectModelDefinition
-import com.thesledgehammer.groovymc.client.definitions.GroovyRenderDefinition
-import com.thesledgehammer.groovymc.client.definitions.render.CutoutKey
-import com.thesledgehammer.groovymc.client.definitions.render.CutoutMippedKey
-import com.thesledgehammer.groovymc.client.definitions.render.SolidKey
-import com.thesledgehammer.groovymc.client.definitions.render.TranslucentKey
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectModel
-import com.thesledgehammer.groovymc.client.model.json.GroovysonObjectPart
-import com.thesledgehammer.groovymc.utils.JsonTools
-import com.thesledgehammer.groovymc.utils.StringTools
+import com.thesledgehammer.groovymodels.client.definitions.GroovyDefinitionContext
+import com.thesledgehammer.groovymodels.client.definitions.GroovyObjectModelDefinition
+import com.thesledgehammer.groovymodels.client.definitions.GroovyRenderDefinition
+import com.thesledgehammer.groovymodels.client.definitions.render.CutoutKey
+import com.thesledgehammer.groovymodels.client.definitions.render.CutoutMippedKey
+import com.thesledgehammer.groovymodels.client.definitions.render.SolidKey
+import com.thesledgehammer.groovymodels.client.definitions.render.TranslucentKey
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectModel
+import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
+import com.thesledgehammer.groovymodels.utils.JsonTools
+import com.thesledgehammer.groovymodels.utils.StringTools
 import net.minecraft.client.renderer.model.BakedQuad
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.util.Direction

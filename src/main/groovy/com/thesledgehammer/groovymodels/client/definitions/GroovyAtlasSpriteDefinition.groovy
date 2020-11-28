@@ -7,7 +7,6 @@
 
 package com.thesledgehammer.groovymodels.client.definitions
 
-
 import net.minecraft.client.renderer.texture.AtlasTexture
 import net.minecraft.client.renderer.texture.NativeImage
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
