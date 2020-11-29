@@ -42,11 +42,15 @@ class SuperGom {
     /**
      * @param path: location of file
      * @param modelVersion: GOM version being used
-     * @param type: .xml or .json File Format
-     * @return: object from the contents of the file (.xml or .json)
+     * @param type: .json, .xml or .yaml  File Format
+     * @return: object from the contents of the file (.json, .xml or .yaml)
      */
     static def readSuperGOM(String path, String modelVersion, String type) {
         def superGom = null
+        if(type == "json") {
+            def json = new JsonSlurper();
+            superGom = json.parse(new FileReader("${path}gom-${modelVersion}.json"));
+        }
         if(type == "xml") {
             def xml = new groovy.xml.XmlSlurper();
             superGom = xml.parse(new FileReader("${path}gom-${modelVersion}.xml"));
@@ -55,209 +59,7 @@ class SuperGom {
             def yaml = new YamlSlurper();
             superGom = yaml.parse(new FileReader("${path}gom-${modelVersion}.yaml"));
         }
-        if(type == "json") {
-            def json = new JsonSlurper();
-            superGom = json.parse(new FileReader("${path}gom-${modelVersion}.json"));
-        }
         return superGom;
-    }
-
-    private static void writeToXML(String path, String modelVersion) {
-        def writer = new FileWriter("${path}gom-${modelVersion}.xml");
-        def xml = new MarkupBuilder(writer);
-
-        xml.gom {
-            modelversion(modelVersion)
-            parent()
-            textures {
-
-            }
-            shade()
-            variables {
-
-            }
-            rules {
-                when()
-                type()
-                from()
-                to()
-                origin()
-                angle()
-                scale()
-            }
-            elements {
-                element {
-                    name()
-                    from()
-                    to()
-                    light()
-                    render()
-                    faces {
-                        up {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        down {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        north {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        east {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        west {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        south {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                    }
-                    rotation {
-                        origin()
-                        axis()
-                        angle()
-                        rescale()
-                    }
-                    shade()
-                    colour()
-                    visible()
-                    invert()
-                    bothsides()
-                }
-            }
-            display {
-                name()
-                translation()
-                rotation()
-                scale()
-            }
-            values()
-            ambientocculusion()
-        }
-        writer.close();
-    }
-
-    private static void writeToYaml(String path, String modelVersion) {
-        def writer = new FileWriter("${path}gom-${modelVersion}.yaml");
-        def yaml = new YamlBuilder();
-        yaml.gom {
-            modelversion(modelVersion)
-            parent()
-            textures {
-
-            }
-            shade()
-            variables {
-
-            }
-            rules {
-                when()
-                type()
-                from()
-                to()
-                origin()
-                angle()
-                scale()
-            }
-            elements {
-                element {
-                    name()
-                    from()
-                    to()
-                    light()
-                    render()
-                    faces {
-                        up {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        down {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        north {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        east {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        west {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                        south {
-                            uv()
-                            texture()
-                            cullface()
-                            rotation()
-                            tint()
-                        }
-                    }
-                    rotation {
-                        origin()
-                        axis()
-                        angle()
-                        rescale()
-                    }
-                    shade()
-                    colour()
-                    visible()
-                    invert()
-                    bothsides()
-                }
-            }
-            display {
-                name()
-                translation()
-                rotation()
-                scale()
-            }
-            values()
-            ambientocculusion()
-        }
-        writer.write(yaml);
-        writer.close();
     }
 
     private static void writeToJson(String path, String modelVersion) {
@@ -362,20 +164,220 @@ class SuperGom {
         writer.close();
     }
 
-    static class Serializer implements GomDeserializer<SuperGom>, GomSerializer<SuperGom> {
+    private static void writeToXML(String path, String modelVersion) {
+        def writer = new FileWriter("${path}gom-${modelVersion}.xml");
+        def xml = new MarkupBuilder(writer);
+
+        xml.gom {
+            modelversion(modelVersion)
+            parent()
+            textures {
+
+            }
+            shade()
+            variables {
+
+            }
+            rules {
+                when()
+                type()
+                from()
+                to()
+                origin()
+                angle()
+                scale()
+            }
+            elements {
+                element {
+                    name()
+                    from()
+                    to()
+                    light()
+                    render()
+                    faces {
+                        up {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        down {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        north {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        east {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        west {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        south {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                    }
+                    rotation {
+                        origin()
+                        axis()
+                        angle()
+                        rescale()
+                    }
+                    shade()
+                    colour()
+                    visible()
+                    invert()
+                    bothsides()
+                }
+            }
+            display {
+                name()
+                translation()
+                rotation()
+                scale()
+            }
+            values()
+            ambientocculusion()
+        }
+        writer.close();
+    }
+
+    private static void writeToYaml(String path, String modelVersion) {
+        def writer = new FileWriter("${path}gom-${modelVersion}.yaml");
+        def yaml = new YamlBuilder();
+
+        yaml.gom {
+            modelversion(modelVersion)
+            parent()
+            textures {
+
+            }
+            shade()
+            variables {
+
+            }
+            rules {
+                when()
+                type()
+                from()
+                to()
+                origin()
+                angle()
+                scale()
+            }
+            elements {
+                element {
+                    name()
+                    from()
+                    to()
+                    light()
+                    render()
+                    faces {
+                        up {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        down {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        north {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        east {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        west {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                        south {
+                            uv()
+                            texture()
+                            cullface()
+                            rotation()
+                            tint()
+                        }
+                    }
+                    rotation {
+                        origin()
+                        axis()
+                        angle()
+                        rescale()
+                    }
+                    shade()
+                    colour()
+                    visible()
+                    invert()
+                    bothsides()
+                }
+            }
+            display {
+                name()
+                translation()
+                rotation()
+                scale()
+            }
+            values()
+            ambientocculusion()
+        }
+        writer.write(yaml);
+        writer.close();
+    }
+
+    static void init() {
+        writeSuperGOM(PATH, CURRENT_VERSION, "json");
+        writeSuperGOM(PATH, CURRENT_VERSION, "xml");
+        writeSuperGOM(PATH, CURRENT_VERSION, "yaml");
+    }
+
+    static class Serializer implements GomReader, GomWriter {
 
         @Override
-        def Deserialize(String path, String version, String type) {
+        Object ReadGom(String path, String version, String type) {
             return readSuperGOM(path, version, type);
         }
 
         @Override
-        void Serialize(String path, String version, String type) {
-            /* Write SuperGOM xml & json */
-            writeSuperGOM(PATH, CURRENT_VERSION, "xml");
-            writeSuperGOM(PATH, CURRENT_VERSION, "yaml");
-            writeSuperGOM(PATH, CURRENT_VERSION, "json");
-
+        void WriteGom(String path, String version, String type) {
             /* Write GOM */
             writeSuperGOM(path, version, type);
         }

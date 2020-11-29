@@ -9,10 +9,7 @@ package com.thesledgehammer.groovymodels.client.model
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.util.Direction
-
-import javax.vecmath.Point3f
-import javax.vecmath.Tuple3f
-import javax.vecmath.Vector3f
+import net.minecraft.util.math.vector.Vector3f
 
 /** Provides various utilities for creating {@link MutableQuad} out of various position information, such as a single
  * face of a cuboid. */

@@ -13,10 +13,7 @@ import net.minecraft.client.renderer.model.BakedQuad
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats
 import net.minecraft.util.Direction
-import net.minecraft.util.math.Vec3d
-import net.minecraft.util.math.Vec3i
-
-import javax.vecmath.*
+import net.minecraft.util.math.vector.Vector3f
 
 /** Holds all of the information necessary to make a {@link BakedQuad}. This provides a variety of methods to quickly
  * set or get different elements. This currently holds 4 {@link MutableVertex}. */

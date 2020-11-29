@@ -12,8 +12,7 @@ import com.thesledgehammer.groovymodels.client.model.MutableQuad
 import com.thesledgehammer.groovymodels.utils.ListTools
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 import net.minecraft.util.Direction
-
-import javax.vecmath.Vector3f
+import net.minecraft.util.math.vector.Vector3f
 
 class JsonQuads {
 
