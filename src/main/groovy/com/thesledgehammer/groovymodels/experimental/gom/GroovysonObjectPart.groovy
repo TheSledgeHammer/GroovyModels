@@ -14,14 +14,25 @@
  * limitations under the License.
  */
 
-package com.thesledgehammer.groovymodels.experimental
+package com.thesledgehammer.groovymodels.experimental.gom
 
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.Gom
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.GomPart
+import com.thesledgehammer.groovymodels.api.gom.Gom
+import com.thesledgehammer.groovymodels.api.gom.GomPart
 
 class GroovysonObjectPart extends GomPart {
 
     GroovysonObjectPart(Gom gom, String index) {
         super(gom, index);
     }
+/*
+    @Override
+    String name() {
+        return this.getPartName();
+    }
+
+    @Override
+    void addQuads(IModelConfiguration owner, IModelBuilder<?> modelBuilder, ModelBakery bakery, Function<RenderMaterial, TextureAtlasSprite> spriteGetter, IModelTransform modelTransform, ResourceLocation modelLocation) {
+
+    }
+    */
 }

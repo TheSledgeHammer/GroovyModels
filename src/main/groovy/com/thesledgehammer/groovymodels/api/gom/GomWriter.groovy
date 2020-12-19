@@ -1,4 +1,4 @@
-package subproject.com.thesledgehammer.groovymodels.client.model.gom
+package com.thesledgehammer.groovymodels.api.gom
 
 interface GomWriter {
 

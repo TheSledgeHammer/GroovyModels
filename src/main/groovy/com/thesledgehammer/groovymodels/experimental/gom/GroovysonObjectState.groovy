@@ -14,38 +14,24 @@
  * limitations under the License.
  */
 
-package com.thesledgehammer.groovymodels.experimental
+package com.thesledgehammer.groovymodels.experimental.gom
 
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.Gom
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.GomPart
+import com.thesledgehammer.groovymodels.experimental.GroovyResourceLocation
+import com.thesledgehammer.groovymodels.api.gom.GomState
 
-class GroovysonObject extends Gom {
+class GroovysonObjectState extends GomState {
 
     private GroovyResourceLocation resourceLocation;
 
-    GroovysonObject(GroovyResourceLocation resourceLocation) {
+    GroovysonObjectState(GroovyResourceLocation ) {
         this.resourceLocation = resourceLocation;
     }
 
-    GroovysonObject(String namespaceIn, String pathIn) {
+    GroovysonObjectState(String namespaceIn, String pathIn) {
         this(new GroovyResourceLocation(namespaceIn, pathIn));
     }
 
-    GroovysonObject(String resourceName) {
+    GroovysonObjectState(String resourceName) {
         this(new GroovyResourceLocation(resourceName));
-    }
-
-    @Override
-    void readParts(List<GomPart> parts) {
-        for(String elem : this.elements) {
-            parts.add(new GroovysonObjectPart(this, elem))
-        }
-    }
-
-    @Override
-    void readTextures(List<String> textures) {
-        for(String texture : this.textures) {
-            textures.add(texture);
-        }
     }
 }

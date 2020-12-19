@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package subproject.com.thesledgehammer.groovymodels.client.model.gom
+package com.thesledgehammer.groovymodels.api.gom
 
 import com.thesledgehammer.groovymodels.config.Constants
 import com.thesledgehammer.groovymodels.utils.StringTools
@@ -28,6 +28,18 @@ abstract class Gom implements IGom {
     private final String defaultversion = SuperGom.CURRENT_VERSION;
     private final String defaulttype = "json";
 
+    Gom() {
+        this(defaultpath, defaultversion, defaulttype);
+    }
+
+    Gom(String mType) {
+        this(defaultpath, defaultversion, mType);
+    }
+
+    Gom(String mPath, String mType) {
+        this(mPath, defaultversion, mType);
+    }
+
     /**
      *
      * @param mPath: Resource Location path to .gom file
@@ -39,10 +51,7 @@ abstract class Gom implements IGom {
         setGom(mPath, mVersion, mType);
     }
 
-    Gom() {
-        this(defaultpath, defaultversion, defaulttype);
-    }
-
+    @Override
     void setGom(String mPath, String mVersion, String mType) {
         this.obj = instance.ReadGom(mPath, mVersion, mType);
         String[] temp = StringTools.split(mPath, "/");

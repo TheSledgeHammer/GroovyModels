@@ -16,9 +16,10 @@
 
 package com.thesledgehammer.groovymodels.experimental
 
+import com.thesledgehammer.groovymodels.experimental.gom.GroovysonObjectModel
 import com.thesledgehammer.groovymodels.utils.StringTools
 import net.minecraft.util.ResourceLocation
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.Gom
+import com.thesledgehammer.groovymodels.api.gom.Gom
 
 class GroovyResourceLocation extends ResourceLocation {
 
@@ -38,7 +39,7 @@ class GroovyResourceLocation extends ResourceLocation {
 
         @Override
         Gom serialize(GroovyResourceLocation src, String type, GomSerializationContext context) {
-            return new GroovyObjectModel(src);
+            return new GroovysonObjectModel(src);
         }
 
         @Override

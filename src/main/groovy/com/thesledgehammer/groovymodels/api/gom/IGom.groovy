@@ -14,19 +14,23 @@
  * limitations under the License.
  */
 
-package subproject.com.thesledgehammer.groovymodels.client.model.gom
-
+package com.thesledgehammer.groovymodels.api.gom
 /* GOM (Groovy Object Model Interface) */
 interface IGom {
+
+    void setGom(String mPath, String mVersion, String mType);
 
     /* GOM format version */
     String getGOMVersion();
 
     String getName();
 
-    void readParts(List<GomPart> parts);
+    //void readParts(List<GomPart> parts);
 
-    void readTextures(List<String> textures);
+    void readParts(Map<String, GomPart> parts);
+
+    void readTextures(Map<String, Object> gomTexture);
+    //void readTextures(List<String> textures);
 
     /* retrieve GOM object */
     def getGOM();

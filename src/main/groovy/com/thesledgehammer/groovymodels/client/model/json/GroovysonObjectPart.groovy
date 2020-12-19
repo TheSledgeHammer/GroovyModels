@@ -26,7 +26,7 @@ class GroovysonObjectPart {
 
     GroovysonObjectPart(GroovysonObject groovysonObject, String index) {
         this.groovysonObject = groovysonObject;
-        this.part = groovysonObject.elements.getAt(index)
+        this.part = groovysonObject.elements[index]
     }
 
     String getPartName() {

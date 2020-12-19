@@ -22,7 +22,7 @@ import net.minecraftforge.fml.ModLoadingContext
 import net.minecraftforge.fml.common.Mod
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.SuperGom
+import com.thesledgehammer.groovymodels.api.gom.SuperGom
 
 @Mod(Constants.MOD_ID)
 class GroovyModels {

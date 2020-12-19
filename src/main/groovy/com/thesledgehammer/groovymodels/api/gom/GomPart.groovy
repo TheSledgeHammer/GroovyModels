@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package subproject.com.thesledgehammer.groovymodels.client.model.gom
+package com.thesledgehammer.groovymodels.api.gom
 
 import net.minecraft.util.Direction
 
@@ -23,11 +23,11 @@ abstract class GomPart implements IGomPart {
     private Gom gom;
     private def part;
 
-    GomPart(Gom gom, String index) {
+    GomPart(Gom gom, String elem) {
         this.gom = gom;
-        this.part = gom.elements.getAt(index);
+        this.part = gom.elements[elem];
     }
-
+    
     @Override
     String getPartName() {
         return part.name;

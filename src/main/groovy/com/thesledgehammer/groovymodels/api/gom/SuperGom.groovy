@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package subproject.com.thesledgehammer.groovymodels.client.model.gom
+package com.thesledgehammer.groovymodels.api.gom
 
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
@@ -25,7 +25,7 @@ import groovy.yaml.YamlSlurper
 class SuperGom {
 
     static String CURRENT_VERSION = "1.0.2";
-    static String PATH = "src/main/groovy/subproject/resources/gom/"
+    static String PATH = "src/main/resources/assets/groovymodels/gom/"
 
     static void writeSuperGOM(String path, String modelVersion, String type) {
         if(type == "xml") {

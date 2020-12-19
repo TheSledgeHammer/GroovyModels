@@ -16,7 +16,7 @@
 
 package com.thesledgehammer.groovymodels.experimental
 
-import subproject.com.thesledgehammer.groovymodels.client.model.gom.Gom
+import com.thesledgehammer.groovymodels.api.gom.Gom
 
 interface GomDeserializer<T> {
 
