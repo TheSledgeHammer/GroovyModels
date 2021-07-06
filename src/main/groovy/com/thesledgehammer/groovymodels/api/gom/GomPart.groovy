@@ -37,7 +37,8 @@ abstract class GomPart implements IGomPart {
     ArrayList<Float> From() {
         ArrayList<Float> arrPart = new ArrayList<>();
         for(int i = 0; i < part.from.size; i++) {
-            arrPart.add(i, part.from.get(i));
+            Float from = part.from.get(i);
+            arrPart.add(i, from);
         }
         return arrPart;
     }
@@ -46,7 +47,8 @@ abstract class GomPart implements IGomPart {
     ArrayList<Float> To() {
         ArrayList<Float> arrPart = new ArrayList<>();
         for(int i = 0; i < part.to.size; i++) {
-            arrPart.add(i, part.to.get(i));
+            Float to = part.to.get(i);
+            arrPart.add(i, to);
         }
         return arrPart;
     }
@@ -60,7 +62,8 @@ abstract class GomPart implements IGomPart {
     ArrayList<Float> RotationOrigin() {
         ArrayList<Float> arrPart = new ArrayList<>();
         for(int i = 0; i < part.rotation.origin.size; i++) {
-            arrPart.add(i, part.rotation.origin.get(i));
+            Float origin = part.rotation.origin.get(i);
+            arrPart.add(i, origin);
         }
         return arrPart;
     }
@@ -69,7 +72,8 @@ abstract class GomPart implements IGomPart {
     ArrayList<Float> RotationAxis() {
         ArrayList<Float> arrPart = new ArrayList<>();
         for(int i = 0; i < part.rotation.axis.size; i++) {
-            arrPart.add(i, part.rotation.axis.get(i));
+            Float axis = part.rotation.axis.get(i);
+            arrPart.add(i, axis);
         }
         return arrPart;
     }
@@ -78,7 +82,8 @@ abstract class GomPart implements IGomPart {
     ArrayList<Float> RotationAngle() {
         ArrayList<Float> arrPart = new ArrayList<>();
         for(int i = 0; i < part.rotation.angle.size; i++) {
-            arrPart.add(i, part.rotation.angle.get(i));
+            Float angle = part.rotation.angle.get(i);
+            arrPart.add(i, angle);
         }
         return arrPart;
     }
@@ -100,7 +105,7 @@ abstract class GomPart implements IGomPart {
 
     @Override
     def Facing(Direction face) {
-        String faces = face.getName().toLowerCase();
+        String faces = face.toString().toLowerCase();
         if(part.faces.get(faces) == null) {
             throw new Exception("Current Face does not exist...!");
         }
@@ -109,14 +114,13 @@ abstract class GomPart implements IGomPart {
 
     @Override
     ArrayList<Float> FacingUv(Direction face) {
+        String faces = face.toString().toLowerCase();
         ArrayList<Float> arrPart = new ArrayList<>();
-        def uvFace = null;
-        if(Facing(face) != null) {
-            uvFace = Facing(face);
-        }
+        def uvFace = part.faces.get(faces).uv;
         if(uvFace != null) {
-            for(int i = 0; i < uvFace.uv.size; i++) {
-                arrPart.add(i, uvFace.uv.get(i));
+            for(int i = 0; i < uvFace.size; i++) {
+                Float uv =  uvFace.get(i);
+                arrPart.add(i, uv);
             }
         }
         return arrPart;
@@ -124,28 +128,36 @@ abstract class GomPart implements IGomPart {
 
     @Override
     def TextureFace(Direction face) {
-        return Facing(face).texture;
+        String faces = face.toString().toLowerCase();
+        def texture = part.faces.get(faces).texture;
+        return texture;
     }
 
     @Override
     def CullFaceFace(Direction face) {
-        return Facing(face).cullface;
+        String faces = face.toString().toLowerCase();
+        def cull = part.faces.get(faces).cullface;
+        return cull;
     }
 
     @Override
     def FacingRotation(Direction face, int fallback) {
-        if(Facing(face).rotation == null) {
+        String faces = face.toString().toLowerCase();
+        def rotation = part.faces.get(faces).rotation;
+        if(rotation == null) {
             return fallback;
         }
-        return Facing(face).rotation;
+        return rotation;
     }
 
     @Override
     def FacingTint(Direction face, int fallback) {
-        if(Facing(face).tintindex == null || Facing(face) == null) {
+        String faces = face.toString().toLowerCase();
+        def tintindex = part.faces.get(faces).tintindex;
+        if(tintindex == null || Facing(face) == null) {
             return fallback;
         }
-        return Facing(face).tintindex;
+        return tintindex;
     }
 
     @Override

@@ -1,7 +1,6 @@
 buildscript {
 	repositories {
 		maven { url = 'https://files.minecraftforge.net/maven' }
-		jcenter()
 		mavenCentral()
 	}
 	dependencies {
@@ -13,7 +12,6 @@ plugins {
 	id 'groovy'
 	id 'maven'
 	id 'idea'
-	id "com.jfrog.bintray" version "1.8.4"
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply from: project.file('maven.gradle')
@@ -27,7 +25,15 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 repositories {
 	maven {
 		name = "Apache Groovy"
-		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
+		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy"
+	}
+	maven {
+		name = "Apache Groovy Json"
+		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-json"
+	}
+	maven {
+		name = "Apache Groovy Xml"
+		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-xml"
 	}
 	maven {
 		name = "Apache Groovy Yaml"
@@ -35,7 +41,11 @@ repositories {
 	}
 	maven {
 		name = "TheSledgeHammer"
-		url = "https://dl.bintray.com/thesledgehammer/development/"
+		url = "https://maven.pkg.github.com/TheSledgeHammer/GroovyForge"
+		credentials {
+			username = project.hasProperty('github_key') ? project.property('github_key') : System.getenv("github_user")
+			password = project.hasProperty('github_key') ? project.property('github_key') : System.getenv("github_key")
+		}
 	}
 }
 
@@ -87,9 +97,11 @@ minecraft {
 
 dependencies {
 	minecraft "net.minecraftforge:forge:${mcversion}-${forgeversion}"
-	compile "org.codehaus.groovy:groovy-all:${groovy_version}"
+	compile "org.codehaus.groovy:groovy:${groovy_version}"
+	compile "org.codehaus.groovy:groovy-json:${groovy_version}"
+	compile "org.codehaus.groovy:groovy-xml:${groovy_version}"
 	compile "org.codehaus.groovy:groovy-yaml:${groovy_version}"
-	compile "com.thesledgehammer.GroovyForge:GroovyForge_${mcversion}:${groovyforge_version}:universal"
+	compile "ooo.thesledgehammer:groovyforge:${groovyforge_version}"
 }
 
 jar {

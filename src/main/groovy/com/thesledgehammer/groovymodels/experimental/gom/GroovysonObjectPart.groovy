@@ -21,18 +21,7 @@ import com.thesledgehammer.groovymodels.api.gom.GomPart
 
 class GroovysonObjectPart extends GomPart {
 
-    GroovysonObjectPart(Gom gom, String index) {
-        super(gom, index);
+    GroovysonObjectPart(Gom gom, String elem) {
+        super(gom, elem);
     }
-/*
-    @Override
-    String name() {
-        return this.getPartName();
-    }
-
-    @Override
-    void addQuads(IModelConfiguration owner, IModelBuilder<?> modelBuilder, ModelBakery bakery, Function<RenderMaterial, TextureAtlasSprite> spriteGetter, IModelTransform modelTransform, ResourceLocation modelLocation) {
-
-    }
-    */
 }

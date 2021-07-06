@@ -3,6 +3,8 @@
 
 Groovy Models is a split from GroovyMC Library. Focusing on a model api. With GroovyMC Library having a more generic infrastructure.
 
+GroovyModels is based around abstracting the model (.json) format using a GroovyObjectModel (.gom), which essentially can be a .json, .xml or .yaml.
+
 ### Apache License v2.0:
 
 Licensed under the Apache License, Version 2.0 (the "License");

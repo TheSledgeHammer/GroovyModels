@@ -170,7 +170,8 @@ abstract class Gom implements IGom {
             throw new Exception("${name} does not contain Translation...!");
         }
         for(int i = 0; i < obj.display.get(name).translation.size; i++) {
-            arrObj.add(i, obj.display.get(name).translation.get(i));
+            Float trans = obj.display.get(name).translation.get(i);
+            arrObj.add(i, trans);
         }
         return arrObj;
     }
@@ -185,7 +186,8 @@ abstract class Gom implements IGom {
             throw new Exception("${name} does not contain Rotation...!");
         }
         for(int i = 0; i < obj.display.get(name).rotation.size; i++) {
-            arrObj.add(i, obj.display.get(name).rotation.get(i));
+            Float rot = obj.display.get(name).rotation.get(i);
+            arrObj.add(i, rot);
         }
         return arrObj;
     }
@@ -200,7 +202,8 @@ abstract class Gom implements IGom {
             throw new Exception("${name} does not contain Scale...!");
         }
         for(int i = 0; i < obj.display.get(name).scale.size; i++) {
-            arrObj.add(i, obj.display.get(name).scale.get(i));
+            Float scale = obj.display.get(name).scale.get(i);
+            arrObj.add(i, scale);
         }
         return arrObj;
     }
