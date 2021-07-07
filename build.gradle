@@ -40,7 +40,7 @@ repositories {
 		url = "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-yaml"
 	}
 	maven {
-		name = "TheSledgeHammer"
+		name = "TheSledgeHammer GroovyForge"
 		url = "https://maven.pkg.github.com/TheSledgeHammer/GroovyForge"
 		credentials {
 			username = project.hasProperty('github_key') ? project.property('github_key') : System.getenv("github_user")
@@ -108,7 +108,7 @@ jar {
 	manifest {
 		attributes(['Specification-Title': 'groovymodels',
 					'Specification-Vendor': 'TheSledgeHammer',
-					'Specification-Version': "3",
+					'Specification-Version': "1",
 					'Implementation-Title': "GroovyModels",
 					'Implementation-Version': "${version}",
 					'Implementation-Vendor' :'GroovyModels',

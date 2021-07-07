@@ -16,13 +16,13 @@
 
 package com.thesledgehammer.groovymodels
 
+//import com.thesledgehammer.groovymodels.api.gom.SuperGom
 import com.thesledgehammer.groovymodels.config.Constants
 import net.minecraftforge.fml.ModContainer
 import net.minecraftforge.fml.ModLoadingContext
 import net.minecraftforge.fml.common.Mod
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
-import com.thesledgehammer.groovymodels.api.gom.SuperGom
 
 @Mod(Constants.MOD_ID)
 class GroovyModels {
@@ -35,7 +35,7 @@ class GroovyModels {
 	GroovyModels() {
 		INSTANCE = this;
 		MOD_CONTAINER = ModLoadingContext.get().getActiveContainer();
-		SuperGom.init();
+		//SuperGom.init();
 	}
 	//GroovyLoader Example:
 	//private static final GroovyLoader groovyLoader = new GroovyLoader(Constants.MOD_PATH, Constants.RESOURCE_PATH, Constants.GROOVY_JVM, Constants.URL, Constants.MOD_ID);

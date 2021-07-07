@@ -6,9 +6,9 @@ apply plugin: 'signing'
 //COMPANY: Company name or User
 //REPOSITORY_NAME: Git Repository name
 
-def group = "com.thesledgehammer.${project.archivesBaseName}"
+def group = "ooo.thesledgehammer"
 def semVersion = "${version_major}.${version_minor}.${version_patch}"
-def artifactID = "${project.archivesBaseName}_${project.mcversion}"
+def artifactID = "groovymodels"
 /*
 jar {
     archiveClassifier = "universal"

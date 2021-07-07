@@ -16,8 +16,8 @@
 
 package com.thesledgehammer.groovymodels.experimental.gom
 
-import com.thesledgehammer.groovymodels.experimental.GroovyResourceLocation
 import com.thesledgehammer.groovymodels.api.gom.GomState
+import com.thesledgehammer.groovymodels.experimental.GroovyResourceLocation
 
 class GroovysonObjectState extends GomState {
 

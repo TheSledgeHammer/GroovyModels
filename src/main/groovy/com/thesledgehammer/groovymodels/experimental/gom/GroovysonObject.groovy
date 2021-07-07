@@ -16,9 +16,9 @@
 
 package com.thesledgehammer.groovymodels.experimental.gom
 
-import com.thesledgehammer.groovymodels.experimental.GroovyResourceLocation
 import com.thesledgehammer.groovymodels.api.gom.Gom
 import com.thesledgehammer.groovymodels.api.gom.GomPart
+import com.thesledgehammer.groovymodels.experimental.GroovyResourceLocation
 
 abstract class GroovysonObject extends Gom {
 
