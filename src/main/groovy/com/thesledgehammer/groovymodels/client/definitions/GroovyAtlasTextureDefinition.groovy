@@ -1,9 +1,9 @@
 package com.thesledgehammer.groovymodels.client.definitions
 
-import net.minecraft.client.renderer.texture.AtlasTexture
-import net.minecraft.util.ResourceLocation
+import net.minecraft.client.renderer.texture.TextureAtlas
+import net.minecraft.resources.ResourceLocation
 
-class GroovyAtlasTextureDefinition extends AtlasTexture {
+class GroovyAtlasTextureDefinition extends TextureAtlas {
 
     GroovyAtlasTextureDefinition(ResourceLocation textureLocationIn) {
         super(textureLocationIn);

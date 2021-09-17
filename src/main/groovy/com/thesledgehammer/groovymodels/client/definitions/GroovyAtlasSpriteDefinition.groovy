@@ -7,8 +7,8 @@
 
 package com.thesledgehammer.groovymodels.client.definitions
 
-import net.minecraft.client.renderer.texture.AtlasTexture
-import net.minecraft.client.renderer.texture.NativeImage
+import com.mojang.blaze3d.platform.NativeImage
+import net.minecraft.client.renderer.texture.TextureAtlas
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
 
 /* May eventually extend to include animations from TextureAtlasSprite */
@@ -36,7 +36,7 @@ class GroovyAtlasSpriteDefinition extends TextureAtlasSprite {
     }
     */
 
-    protected GroovyAtlasSpriteDefinition(AtlasTexture atlasTextureIn, Info spriteInfoIn, int mipmapLevelsIn, int atlasWidthIn, int atlasHeightIn, int xIn, int yIn, NativeImage imageIn) {
+    protected GroovyAtlasSpriteDefinition(TextureAtlas atlasTextureIn, Info spriteInfoIn, int mipmapLevelsIn, int atlasWidthIn, int atlasHeightIn, int xIn, int yIn, NativeImage imageIn) {
         super(atlasTextureIn, spriteInfoIn, mipmapLevelsIn, atlasWidthIn, atlasHeightIn, xIn, yIn, imageIn);
     }
 }

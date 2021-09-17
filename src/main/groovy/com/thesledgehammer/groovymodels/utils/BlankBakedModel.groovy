@@ -16,15 +16,11 @@
 
 package com.thesledgehammer.groovymodels.experimental
 
-import net.minecraft.block.BlockState
 import net.minecraft.client.Minecraft
-import net.minecraft.client.renderer.model.BakedQuad
-import net.minecraft.client.renderer.model.IBakedModel
-import net.minecraft.client.renderer.model.ItemOverrideList
-import net.minecraft.client.renderer.texture.MissingTextureSprite
+import net.minecraft.client.renderer.block.model.BakedQuad
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
-import net.minecraft.inventory.container.PlayerContainer
-import net.minecraft.util.Direction
+import net.minecraft.core.Direction
+import net.minecraft.world.level.block.state.BlockState
 import net.minecraftforge.api.distmarker.Dist
 import net.minecraftforge.api.distmarker.OnlyIn
 

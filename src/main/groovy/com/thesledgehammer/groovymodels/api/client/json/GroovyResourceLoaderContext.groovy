@@ -17,7 +17,7 @@
 package com.thesledgehammer.groovymodels.api.client.json
 
 import groovy.json.JsonException
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 class GroovyResourceLoaderContext {
 

@@ -17,16 +17,16 @@
 package com.thesledgehammer.groovymodels.api.gom
 
 import com.thesledgehammer.groovymodels.config.Constants
-import com.thesledgehammer.groovymodels.utils.StringTools
+import com.thesledgehammer.groovymodels.experimental.StringTools
 
 abstract class Gom implements IGom {
 
     private final SuperGom.Serializer instance = new SuperGom.Serializer();
     private def obj;
     private String name;
-    private final String defaultpath = Constants.RESOURCE_PATH;
-    private final String defaultversion = SuperGom.CURRENT_VERSION;
-    private final String defaulttype = "json";
+    private static final String defaultpath = Constants.RESOURCE_PATH;
+    private static final String defaultversion = SuperGom.CURRENT_VERSION;
+    private static final String defaulttype = "json";
 
     Gom() {
         this(defaultpath, defaultversion, defaulttype);

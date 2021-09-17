@@ -16,8 +16,8 @@
 
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-import net.minecraft.client.renderer.model.ModelResourceLocation
-import net.minecraft.item.Item
+import net.minecraft.client.resources.model.ModelResourceLocation
+import net.minecraft.world.item.Item
 
 interface IModelEntryHolderManager {
 

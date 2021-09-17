@@ -20,7 +20,7 @@ import com.thesledgehammer.groovymodels.utils.variables.VariableBoolean
 import com.thesledgehammer.groovymodels.utils.variables.VariableDouble
 import com.thesledgehammer.groovymodels.utils.variables.VariableLong
 import com.thesledgehammer.groovymodels.utils.variables.VariableObject
-import net.minecraft.util.Direction
+import net.minecraft.core.Direction
 
 interface IGroovyObjectModelDefinition {
 

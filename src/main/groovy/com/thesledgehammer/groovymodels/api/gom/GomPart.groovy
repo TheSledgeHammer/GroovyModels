@@ -16,7 +16,7 @@
 
 package com.thesledgehammer.groovymodels.api.gom
 
-import net.minecraft.util.Direction
+import net.minecraft.core.Direction
 
 abstract class GomPart implements IGomPart {
 

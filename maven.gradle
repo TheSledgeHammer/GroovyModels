@@ -1,4 +1,3 @@
-apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
@@ -6,17 +5,6 @@ apply plugin: 'signing'
 //COMPANY: Company name or User
 //REPOSITORY_NAME: Git Repository name
 
-def group = "ooo.thesledgehammer"
-def semVersion = "${version_major}.${version_minor}.${version_patch}"
-def artifactID = "groovymodels"
-/*
-jar {
-    archiveClassifier = "universal"
-    manifest {
-        attributes 'FMLAT': project.archivesBaseName + '_at.cfg'
-  }
-}
-*/
 signing {
   if (project.hasProperty('keystore')) {
     keyStore = System.getenv('keyStore')
@@ -29,18 +17,18 @@ signing {
 }
 
 publishing {
-	publications {
+  publications {
     maven(MavenPublication) {
-      groupId = group
-      version = semVersion
-      artifactId = artifactID
+      groupId = "ooo.thesledgehammer"
+      version = "${version_major}.${version_minor}.${version_patch}"
+      artifactId = "groovyforge"
 
       from components.java
 
       pom {
        scm {
-           connection = "scm:git:git@${GITHOST}:${COMPANY}/${REPOSITORY_NAME}.git"
-           developerConnection = "scm:git:git@${GITHOST}:${COMPANY}/${REPOSITORY_NAME}.git"
+          connection = "scm:git:git@${GITHOST}:${COMPANY}/${REPOSITORY_NAME}.git"
+          developerConnection = "scm:git:git@${GITHOST}:${COMPANY}/${REPOSITORY_NAME}.git"
         }
         licenses {
           license {
@@ -60,7 +48,6 @@ publishing {
   }
   repositories {
       maven {
-          name = project.archivesBaseName
           url = uri("https://maven.pkg.github.com/TheSledgeHammer/${REPOSITORY_NAME}")
           credentials {
               username = project.hasProperty('github_key') ? project.property('github_key') : System.getenv("github_user")

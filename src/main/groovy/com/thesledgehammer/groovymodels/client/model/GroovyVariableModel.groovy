@@ -26,7 +26,7 @@ import com.thesledgehammer.groovymodels.client.definitions.render.TranslucentKey
 import com.thesledgehammer.groovymodels.client.model.json.*
 import com.thesledgehammer.groovymodels.utils.ListTools
 import com.thesledgehammer.groovymodels.utils.StringTools
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 //Work In Progress: JsonRule
 class GroovyVariableModel extends GroovysonObjectModel {

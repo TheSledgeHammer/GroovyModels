@@ -21,7 +21,7 @@ import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
 import com.thesledgehammer.groovymodels.utils.ListTools
 import com.thesledgehammer.groovymodels.utils.StringTools
 import com.thesledgehammer.groovymodels.utils.variables.*
-import net.minecraft.util.Direction
+import net.minecraft.core.Direction
 
 class GroovysonVariableKey implements IVariableKey {
 

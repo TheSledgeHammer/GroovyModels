@@ -1,7 +1,7 @@
 package com.thesledgehammer.groovymodels.experimental
 
 import net.minecraft.client.Minecraft
-import net.minecraft.resources.IResource
+import net.minecraft.server.packs.resources.Resource
 
 import java.nio.charset.StandardCharsets
 
@@ -15,7 +15,7 @@ class ResourceLoader {
             throw new Exception("Already loaded " + location + " from " + loadingStack.peek())
         }
         loadingStack.push(location);
-        IResource res =  Minecraft.getInstance().getResourceManager().getResource(location);
+        Resource res =  Minecraft.getInstance().getResourceManager().getResource(location);
         return new InputStreamReader(res.getInputStream(), StandardCharsets.UTF_8);
     }
 
@@ -25,7 +25,7 @@ class ResourceLoader {
             throw new Exception("Already loaded " + location + " from " + loadingStack.peek())
         }
         loadingStack.push(location);
-        IResource res = Minecraft.getInstance().getResourceManager().getResource(location);
+        Resource res = Minecraft.getInstance().getResourceManager().getResource(location);
         return new InputStreamReader(res.getInputStream(), StandardCharsets.UTF_8);
     }
 

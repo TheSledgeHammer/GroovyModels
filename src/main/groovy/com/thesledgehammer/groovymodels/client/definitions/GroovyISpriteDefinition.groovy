@@ -16,14 +16,14 @@
 
 package com.thesledgehammer.groovymodels.client.definitions
 
-import net.minecraft.client.renderer.texture.AtlasTexture
+import net.minecraft.client.renderer.texture.TextureAtlas
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 import net.minecraftforge.api.distmarker.Dist
 import net.minecraftforge.api.distmarker.OnlyIn
 
 @OnlyIn(Dist.CLIENT)
-class GroovyISpriteDefinition extends AtlasTexture {
+class GroovyISpriteDefinition extends TextureAtlas {
 
     private TextureAtlasSprite sprite;
 
@@ -58,7 +58,7 @@ class GroovyISpriteDefinition extends AtlasTexture {
         return iSprite.getTextureAtlasSprite();
     }
 
-    static void onTextureStitchPre(AtlasTexture map, TextureAtlasSprite sprite, ResourceLocation spriteLocation) {
+    static void onTextureStitchPre(TextureAtlas map, TextureAtlasSprite sprite, ResourceLocation spriteLocation) {
         int widthIn = map.getSprite(spriteLocation).getWidth();
         int heightIn = map.getSprite(spriteLocation).getHeight();
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.thesledgehammer.groovymodels.utils
+package com.thesledgehammer.groovymodels.experimental
 
 class StringTools {
 /*

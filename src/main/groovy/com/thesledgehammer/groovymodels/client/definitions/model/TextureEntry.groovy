@@ -18,9 +18,9 @@ package com.thesledgehammer.groovymodels.client.definitions.model
 import com.thesledgehammer.groovymodels.api.client.ISprite
 import com.thesledgehammer.groovymodels.client.definitions.GroovyAtlasSpriteDefinition
 import com.thesledgehammer.groovymodels.client.definitions.GroovyISpriteDefinition
-import net.minecraft.client.renderer.texture.AtlasTexture
+import net.minecraft.client.renderer.texture.TextureAtlas
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 class TextureEntry extends ModelEntryConsumer  {
 
@@ -60,7 +60,7 @@ class TextureEntry extends ModelEntryConsumer  {
         return textureAtlasSprite;
     }
 
-    void onTextureStitchPre(AtlasTexture map) {
+    void onTextureStitchPre(TextureAtlas map) {
         GroovyISpriteDefinition.onTextureStitchPre(map, getTextureAtlasSprite(), getSpriteResourceLocation());
     }
 }

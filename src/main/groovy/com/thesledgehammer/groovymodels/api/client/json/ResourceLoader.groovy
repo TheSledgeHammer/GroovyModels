@@ -9,8 +9,7 @@ package com.thesledgehammer.groovymodels.api.client.json
 
 import groovy.json.JsonException
 import net.minecraft.client.Minecraft
-import net.minecraft.resources.IResource
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 import java.nio.charset.StandardCharsets
 

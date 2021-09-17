@@ -15,9 +15,8 @@
  */
 package com.thesledgehammer.groovymodels.client.definitions.model
 
-import net.minecraft.client.renderer.model.IBakedModel
-import net.minecraft.client.renderer.model.ModelResourceLocation
-import net.minecraft.util.ResourceLocation
+import net.minecraft.client.resources.model.ModelResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 class ModelEntry extends ModelEntryConsumer {
 

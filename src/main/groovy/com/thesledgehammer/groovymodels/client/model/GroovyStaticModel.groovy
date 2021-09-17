@@ -27,10 +27,10 @@ import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectModel
 import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
 import com.thesledgehammer.groovymodels.utils.JsonTools
 import com.thesledgehammer.groovymodels.utils.StringTools
-import net.minecraft.client.renderer.model.BakedQuad
+import net.minecraft.client.renderer.block.model.BakedQuad
 import net.minecraft.client.renderer.texture.TextureAtlasSprite
-import net.minecraft.util.Direction
-import net.minecraft.util.ResourceLocation
+import net.minecraft.core.Direction
+import net.minecraft.resources.ResourceLocation
 
 class GroovyStaticModel extends GroovysonObjectModel {
 

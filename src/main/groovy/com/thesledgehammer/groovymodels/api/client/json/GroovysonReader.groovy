@@ -18,7 +18,7 @@ package com.thesledgehammer.groovymodels.api.client.json
 
 import com.thesledgehammer.groovymodels.utils.StringTools
 import groovy.json.JsonSlurper
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 /**
  * Allows for reading of resource in either .json or .xml format.

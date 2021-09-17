@@ -1,5 +1,5 @@
 modLoader="groovyfml"
-loaderVersion="[4,)"
+loaderVersion="[5,)"
 issueTrackerURL="https://github.com/TheSledgeHammer/GroovyModels/issues"
 [[mods]]
     modId="groovymodels"

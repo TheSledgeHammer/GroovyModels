@@ -18,7 +18,7 @@ package com.thesledgehammer.groovymodels.client.definitions.json
 import com.google.common.collect.HashBasedTable
 import com.google.common.collect.Table
 import com.thesledgehammer.groovymodels.client.model.json.GroovysonObjectPart
-import net.minecraft.util.Direction
+import net.minecraft.core.Direction
 
 class GroovysonStaticKey implements IStaticKey {
 

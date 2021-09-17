@@ -1,12 +1,5 @@
 package com.thesledgehammer.groovymodels.utils
 
-import net.minecraft.util.math.AxisAlignedBB
-import net.minecraft.util.math.BlockPos
-import net.minecraft.util.math.BlockRayTraceResult
-import net.minecraft.util.math.Tuple3d
-import net.minecraft.util.math.shapes.VoxelShapes
-import net.minecraft.util.math.vector.Vector3d
-
 import javax.annotation.Nullable
 
 //BlockState: contains methods related to renderShape, collisionShape, RaytraceShape
@@ -19,11 +12,12 @@ class VoxelShapeTools {
 
     @Nullable
     static BlockRayTraceResult rayTrace(BlockPos pos, Vector3d start, Vector3d end, double x1, double y1, double z1, double x2, double y2, double z2) {
-        Tuple3d vec3d = start.subtract((double)pos.getX(), (double)pos.getY(), (double)pos.getZ());
-        Tuple3d vec3d1 = end.subtract((double)pos.getX(), (double)pos.getY(), (double)pos.getZ());
+        Tuple3d vec3d = start.subtract((double) pos.getX(), (double) pos.getY(), (double) pos.getZ());
+        Tuple3d vec3d1 = end.subtract((double) pos.getX(), (double) pos.getY(), (double) pos.getZ());
         BlockRayTraceResult rayTrace = VoxelShapes.create(x1, y1, z1, x2, y2, z2).rayTrace(vec3d, vec3d1, pos);
         return rayTrace == null ? null : new BlockRayTraceResult(rayTrace.getHitVec().add((double) pos.getX(), (double) pos.getY(), (double) pos.getZ()), rayTrace.getFace(), rayTrace.getPos(), rayTrace.isInside());
     }
+}
 /*
     private VoxelShape shape;
 

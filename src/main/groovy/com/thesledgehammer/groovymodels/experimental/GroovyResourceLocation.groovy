@@ -18,8 +18,7 @@ package com.thesledgehammer.groovymodels.experimental
 
 import com.thesledgehammer.groovymodels.api.gom.Gom
 import com.thesledgehammer.groovymodels.experimental.gom.GroovysonObjectModel
-import com.thesledgehammer.groovymodels.utils.StringTools
-import net.minecraft.util.ResourceLocation
+import net.minecraft.resources.ResourceLocation
 
 class GroovyResourceLocation extends ResourceLocation {
 
