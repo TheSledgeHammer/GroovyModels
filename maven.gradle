@@ -21,7 +21,7 @@ publishing {
     maven(MavenPublication) {
       groupId = "ooo.thesledgehammer"
       version = "${version_major}.${version_minor}.${version_patch}"
-      artifactId = "groovyforge"
+      artifactId = "groovymodels"
 
       from components.java
 

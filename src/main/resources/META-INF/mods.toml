@@ -1,9 +1,10 @@
 modLoader="groovyfml"
 loaderVersion="[5,)"
 issueTrackerURL="https://github.com/TheSledgeHammer/GroovyModels/issues"
+
 [[mods]]
     modId="groovymodels"
-    version="${version}"
+    version="${file.jarVersion}"
     displayName="GroovyModels"
     #updateJSONURL="http://myurl.me/" #optional
     displayURL="https://github.com/TheSledgeHammer/GroovyModels"
